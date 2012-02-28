@@ -1,0 +1,192 @@
+﻿/* document */
+
+body
+{
+    font-family: "Trebuchet MS", Helvetica, sans-serif;
+    background: #666;
+    color: #aaaaaa;
+    margin: 0;
+}
+
+a
+{
+    color: #cccccc;
+}
+
+a img
+{
+    border: inherit;
+}
+
+p, h1, h2, h3, h4, h5, h6
+{
+    margin:0;
+}
+
+#whole
+{
+    width: 1001px;
+    margin: 20px auto;
+    border: 2px solid #000000;
+    border-radius: 10px;
+    overflow: hidden;
+    background: #222222;
+}
+
+table
+{
+    border-collapse: collapse;
+}
+
+/* header */
+
+#header
+{
+    height: 100px;
+    padding: 20px 15px 0 15px;
+}
+
+#header>h1, #header>h3
+{
+    text-align:center;
+    text-shadow: 2px 1px 3px #666666;
+}
+
+#search
+{
+    float:right;
+    clear:both;
+}
+
+/* sidebar */
+
+#side
+{
+    padding: 10px 0;
+    width: 180px;
+    float: left;
+}
+
+#menu
+{
+    position: fixed;
+}
+
+#menu a
+{
+    display: block;
+    width: 160px;
+    height: 25px;
+    padding: 0 10px;
+    background: #151515;
+    text-decoration: none;
+    text-shadow: 1px 1px 2px #666666;
+}
+
+#menu a.child
+{
+    width: 130px;
+    background: #2b2b2b;
+    margin: 0 0 0 30px;
+    border-radius: 5px 0 0 5px;
+}
+
+/* main content */
+
+#main
+{
+    padding: 10px;
+    width: 800px;
+    background: #eeeeee;
+    float: right;
+    color: #000000;
+    border: 1px solid #888888;
+    border-right: none;
+    border-radius: 5px 0 0 5px;
+    min-height:220px;
+}
+
+#main a
+{
+    color:#222222;
+}
+
+.section
+{
+    margin: 25px 0 10px 0;
+    text-shadow: 1px 1px 2px #aaaaaa;
+}
+
+.quote
+{
+    border: 1px dotted #cccccc;
+    margin: 3px 8px;
+    padding: 0 5px 5px 10px;
+}
+
+.comment
+{
+    border: 1px dashed #cccccc;
+    margin: 8px;
+    padding: 0 5px 5px 10px;
+}
+.comment>a
+{
+    float: right;
+    opacity: 0.5;
+}
+.comment>h3
+{
+    border-bottom: 1px dashed #cccccc;
+}
+.comment>h5
+{
+    float:right;
+}
+
+.article
+{
+    margin: 5px 0 25px 0;
+}
+.article>h1, .article>h2
+{
+    text-shadow: 2px 2px 3px #aaaaaa;
+}
+.article>h3, .article>h4
+{
+    float: right;
+}
+
+.category
+{
+    margin: 6px;
+    border: 2px dashed #cccccc;
+    border-radius: 5px;
+    background: #dddddd;
+    padding: 8px;
+    width: 230px;
+    display: inline-block;
+}
+.category h3
+{
+    text-shadow: 1px 1px 2px #aaaaaa;
+}
+.category .rss
+{
+    float: right;
+}
+
+.paging
+{
+    width:100%;
+    text-align:center;
+    margin-top:80px;
+}
+
+/* footer */
+
+#footer
+{
+    padding: 20px 15px 0 15px;
+    height: 60px;
+}

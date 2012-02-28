@@ -1,0 +1,45 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" Inherits="EduWeb.Edu" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head id="head" runat="server">
+    <title><% Title(); %></title>
+    <meta name="google-site-verification" content="VmbUTfwhKWKKxsS2khoYSEIqX5yS_0edEVi_OpqFiZI" />
+    <link href="/Edu.css" rel="Stylesheet" type="text/css" />
+    <script type="text/javascript">
+        function search() {
+            var s = encodeURIComponent(document.getElementById("searchInput").value);
+            location.replace("https://www.google.com/search?q=site:" + location.hostname + "%20" + s);
+        }
+    </script>
+    <asp:ContentPlaceHolder id="script" runat="server" />
+</head>
+<body>
+<form id="form1" action="" runat="server">
+<div id="whole">
+    <div id="header">
+        <h1><% Title(); %></h1>
+        <h3><% Description(); %></h3>
+        <div id="search">
+            <input type="search" id="searchInput" />
+            <a href="javascript:search();" id="searchLink">Search</a>
+        </div>
+    </div>
+    <div id="side">
+        <div id="menu">
+            <% Sidemenu(); %>
+        </div>
+    </div>
+    <div id="main">
+        <asp:ContentPlaceHolder id="content" runat="server" />
+    </div>
+    <br style="clear:both" />
+    <div id="footer">
+        <a style="float:right" href="/Feed.aspx">RSS Feed</a>
+        <p>This site is &copy; 2011-2012 <a href="http://davidpavel.eu">me</a>. All rights reserved.</p>
+    </div>
+</div>
+</form>
+</body>
+</html>

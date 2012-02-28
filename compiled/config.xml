@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<config>
+  <web>
+    <title>IDGAF</title>
+    <url>http://edu.davidpavel.eu/</url>
+    <desc>Srsly IDK, whatevs</desc>
+  </web>
+  <db>
+    <name><!-- and schema, if applicable-->[Edu].[dbo]</name>
+  </db>
+  <content>
+    <perPage>10</perPage>
+  </content>
+</config>
